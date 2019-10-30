@@ -20,6 +20,39 @@
         app:fontFamily="@font/roboto"
         style="@style/NameStyle" />
 
+    <EditText
+        android:id="@+id/nickname_edit"
+        style="@style/NameStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/what_is_your_nickname"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:fontFamily="@font/roboto"
+        android:importantForAutofill="no" />
+
+    <Button
+        android:id="@+id/done_button"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/layout_margin"
+        android:includeFontPadding="true"
+        android:text="@string/done"
+        android:onClick="addNickname"/>
+
+    <TextView
+        android:id="@+id/nickname_text"
+        style="@style/NameStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:visibility="gone"
+        android:background="@color/colorAccent"
+        android:paddingBottom="@dimen/small_padding" />
+
     <ImageView
         android:id="@+id/star_image"
         android:layout_width="match_parent"
@@ -39,9 +72,9 @@
         <ImageView
             android:id="@+id/imageView3"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="300dp"
             android:contentDescription="@string/inside_image"
-            app:srcCompat="@android:drawable/arrow_down_float" />
+            app:srcCompat="@drawable/liyuu" />
 
         <TextView
             android:id="@+id/bio_text"
@@ -49,7 +82,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:lineSpacingMultiplier="1.2"
-            android:text="@string/bio" />
+            android:text="@string/bio"/>
 
     </LinearLayout>
     </ScrollView>
